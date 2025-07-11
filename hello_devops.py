@@ -4,3 +4,4 @@ print("Hello Jenkins, intervention de NGROK pour publier le lien local sur inter
 print("Hello Jenkins, 2eme test du build automatique via le webhook !")
 print("Hello Jenkins, Est-ce que tu as bien reçu le mail de résultat du build ?")
 print("Hello Jenkins, test test ?")
+print("Hello Jenkins, nouveau test ?")
