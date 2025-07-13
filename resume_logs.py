@@ -3,7 +3,8 @@ import json
 
 # Remplace par ta clé Gemini personnelle
 API_KEY = "AIzaSyBQv8D4vQMijV5e4LClGSkAbQW_Xq23zSE"
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent"
+
 
 # Lire les logs Jenkins depuis le fichier (avec encodage compatible Windows)
 with open("logs.txt", "r", encoding="latin1") as f:
@@ -43,7 +44,7 @@ if response.status_code == 200:
     print("\n======================================\n")
 
     # Sauvegarder dans un fichier
-    with open("resume.txt", "w", encoding="utf-8") as out:
+    with open("resume_logs.txt", "w", encoding="utf-8") as out:
         out.write(summary)
 
 else:
