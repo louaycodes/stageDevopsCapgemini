@@ -50,3 +50,6 @@ print("\n======================================\n")
 # Sauvegarder dans un fichier
 with open("resume_logs.txt", "w", encoding="utf-8") as out:
     out.write(summary)
+
+    
+#modiffication du url de gemini
