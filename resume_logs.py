@@ -26,7 +26,7 @@ if response.status_code == 200:
     print("\n===== Résumé des logs par Gemini =====\n")
     print(summary)
     print("\n======================================\n")
-    with open("resume_logs.txt", "w", encoding="utf-8") as out:
+    with open('logs.txt', 'r', encoding='latin1') as f:
         out.write(summary)
 else:
     print(f"Erreur API Gemini : {response.status_code}")
