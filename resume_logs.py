@@ -3,7 +3,7 @@ import json
 
 # Remplace par ta clé Gemini personnelle
 API_KEY = "AIzaSyBQv8D4vQMijV5e4LClGSkAbQW_Xq23zSE"
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent"
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={API_KEY}"
 
 
 # Lire les logs Jenkins depuis le fichier (avec encodage compatible Windows)
