@@ -31,3 +31,5 @@ if response.status_code == 200:
 else:
     print(f"Erreur API Gemini : {response.status_code}")
     print(response.text)
+
+    #Approve mis dans jenkins pour Acceder au RawBuild
