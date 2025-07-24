@@ -6,3 +6,4 @@ print("Hello Jenkins, Est-ce que tu as bien reçu le mail de résultat du build 
 print("Hello Jenkins, test test ?")
 print("Hello Jenkins, nouveau test ?")
 print("Hello Jenkins, test apres correction du url du webhook ")
+print("Séparation des fonctionnalités dans des pipelines distinctes")
