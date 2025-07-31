@@ -12,7 +12,7 @@ with open("logs.txt", "r", encoding="latin1") as f:
 
 # Préparer le prompt pour Gemini
 prompt = f"""Aide a comprendre l'erreur si elle existe dans les logs suivants. si il n a pas d'erreur, mentionne que tous vas bien
-Dans les 2 cas fais un résumé des logs.
+Dans les 2 cas fais un résumé des logs Tres important : Propose une solution au erreurs rencontrés.
 Voici les logs :
 {logs}
 """
