@@ -48,7 +48,7 @@ print(summary)
 print("\n======================================\n")
 
 # Sauvegarder dans un fichier
-with open("resume_logs.txt", "w", encoding="utf-8") as out:
+with open("resume_logs.txt", "w", encoding="utf-8-sig", errors="replace") as out:
     out.write(summary)
 
     
