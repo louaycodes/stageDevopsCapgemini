@@ -17,7 +17,7 @@ print("dernier test avant le passage a la dockerisation 2")
 print("dernier test avant de montrer l'avancement du projet au maitre de stage")
 
 a = 5
-b = 0
+b = 2
 c = a / b
 
 print(c)
