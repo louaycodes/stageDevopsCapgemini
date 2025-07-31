@@ -17,4 +17,5 @@ print("dernier test avant le passage a la dockerisation 2")
 print("dernier test avant de montrer l'avancement du projet au maitre de stage")
 print("test balsam")
 print("test balsam 2")
+erreur syntaxique pour tester la gestion des erreurs dans le pipeline
 
