@@ -15,7 +15,9 @@ print("test de la séparation des logs de chaque pipeline dans des dossiers dist
 print("dernier test avant le passage a la dockerisation")
 print("dernier test avant le passage a la dockerisation 2")
 print("dernier test avant de montrer l'avancement du projet au maitre de stage")
-print("test balsam")
-print("test balsam 2"
 
+a = 5
+b = 0
+c = a / b
 
+print(c)
