@@ -11,19 +11,11 @@ with open("logs.txt", "r", encoding="latin1") as f:
     logs = f.read()
 
 # Préparer le prompt pour Gemini
-prompt = f"""Analyse ces logs Jenkins et produis 3 parties claires :
-1️⃣ Résumé global : Décris en langage simple ce que font les étapes du pipeline sans mentionner de détails techniques comme les IDs de commits ou chemins complets.
-2️⃣ Diagnostic d'erreur : Identifie chaque erreur (type, fichier, numéro de ligne) et donne une brève explication. Si plusieurs erreurs existent, numérote-les.
-3️⃣ Solution proposée : Explique comment corriger chaque erreur de façon simple, avec un exemple de correction si possible.
-
+prompt = f"""Aide a comprendre l'erreur si elle existe dans les logs suivants. si il n a pas d'erreur, mentionne que tous vas bien
+Dans les 2 cas fais un résumé des logs.
 Voici les logs :
 {logs}
-
-⚠️ Consigne :  
-- Ta réponse doit être concise et structurée.  
-- Si l’erreur est une erreur de syntaxe Python (SyntaxError), explique quelle est la cause (ex: parenthèse manquante, indentation, EOF inattendu...).  
-- Fournis une **correction possible** avec un extrait de code corrigé si applicable.  
-- Si aucune erreur n'est trouvée, dis "✅ Aucun problème détecté"."""
+"""
 
 
 headers = {
