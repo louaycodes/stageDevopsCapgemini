@@ -11,7 +11,7 @@ with open("logs.txt", "r", encoding="latin1") as f:
     logs = f.read()
 
 # Préparer le prompt pour Gemini
-prompt = f"Résume ces logs Jenkins en quelques lignes lisibles pour un développeur (ne pas inclure les détails techniques tel que les codes et les id des commits) :\n{logs}"
+prompt = f"Résume ces logs Jenkins en quelques lignes lisibles pour un développeur (ne pas inclure les détails techniques tel que les codes et les id des commits, aussi en cas d'existence d'erreur simplifie les max et ecrit les sous forme d'une seule phrase comprehensible) :\n{logs}"
 
 headers = {
     "Content-Type": "application/json"
